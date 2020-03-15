@@ -1,0 +1,5 @@
+name: Site Api Key
+description: Provides enhancement and customization to site-information.
+type: module
+package: Custom
+core: 8.x

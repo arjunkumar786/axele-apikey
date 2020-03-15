@@ -1,0 +1,10 @@
+apikey.page_json:
+  path: '/page_json/{key}/{nid}'
+  defaults:
+    _controller: '\Drupal\apikey\Controller\ApiKeyController::nodejsonresponse'
+  options:
+    parameters:
+      nid:
+        type: entity:node
+  requirements:
+    _permission: 'access content'
