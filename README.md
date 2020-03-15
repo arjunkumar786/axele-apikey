@@ -1,4 +1,3 @@
-# adminconfigform
 README.txt for ApiKey module
 ---------------------------
 
