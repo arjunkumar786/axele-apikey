@@ -20,7 +20,7 @@ class SiteApiKey extends SiteInformationForm {
     $form = parent::buildForm($form, $form_state);
 
     // Add a textfield to the site information section of the form for our
-    // description.
+    // siteapikey.
     $form['site_information']['siteapikey'] = [
       '#type' => 'textfield',
       '#title' => t('Site API Key'),
@@ -47,7 +47,7 @@ class SiteApiKey extends SiteInformationForm {
         ->set('siteapikey', $form_state->getValue('siteapikey'))
         ->save();
 
-      //Print message after succesfull submission.
+      //Print message after successful submission.
       \Drupal::messenger()->addMessage($this->t('Site API Key has been saved with %value', [
         '%value' => $form_state->getValue('siteapikey'),
       ]), 'status', TRUE);
