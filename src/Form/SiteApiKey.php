@@ -42,12 +42,12 @@ class SiteApiKey extends SiteInformationForm {
     !empty($form_state->getValue('siteapikey'))) {
       // system.site.description configuration.
       $this->config('system.site')
-      // Retrieved siteapikey from the submitted form values & saved it to 
+      // Retrieved siteapikey from the submitted form values & saved it to
       // the 'siteapikey' of the system.site config.
         ->set('siteapikey', $form_state->getValue('siteapikey'))
         ->save();
 
-      //Print message after successful submission.
+      // Print message after successful submission.
       \Drupal::messenger()->addMessage($this->t('Site API Key has been saved with %value', [
         '%value' => $form_state->getValue('siteapikey'),
       ]), 'status', TRUE);

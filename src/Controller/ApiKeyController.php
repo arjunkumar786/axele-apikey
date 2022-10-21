@@ -25,10 +25,11 @@ class ApiKeyController extends ControllerBase {
           $key => $value->getValue(),
         ];
       }
-      return new JsonResponse($json_array);  
+      return new JsonResponse($json_array);
     }
     else {
       return new RedirectResponse('/system/403');
     }
   }
+
 }
