@@ -23,7 +23,7 @@ REQUIREMENTS
 	 - MariaDB: 10.3.7+
 	 - MySQL/Percona 5.7.8+
  - Server
-   - Apache: 2.4+
+ 	 - Apache: 2.4+
 	 - Nginx: 1.8+ or 1.9+
  - PHP: Ver 7.2 or higher
  
