@@ -1,4 +1,4 @@
-README.txt for ApiKey module
+README for ApiKey module
 ---------------------------
 
 CONTENTS OF THIS FILE
@@ -18,7 +18,15 @@ extend it with new field.
 
 REQUIREMENTS
 ------------
-
+ - Drupal: 8+
+ - Database: 
+	 - MariaDB: 10.3.7+
+	 - MySQL/Percona 5.7.8+
+ - Server
+   - Apache: 2.4+
+	 - Nginx: 1.8+ or 1.9+
+ - PHP: Ver 7.2 or higher
+ 
 This module requires no modules outside of Drupal core.
 
 
